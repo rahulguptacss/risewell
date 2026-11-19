@@ -1,0 +1,30 @@
+export default function Icon({ name, className = 'h-5 w-5' }: { name: string; className?: string }) {
+  const common = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, className, 'aria-hidden': true as const };
+  if (name === 'book') return <svg {...common}><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z" /><path d="M4 5.5A2.5 2.5 0 0 1 6.5 8H20" /></svg>;
+  if (name === 'cap') return <svg {...common}><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>;
+  if (name === 'pulse') return <svg {...common}><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg>;
+  if (name === 'heart') return <svg {...common}><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z" /></svg>;
+  if (name === 'leaf') return <svg {...common}><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z" /><path d="M8 16c2-3 5-6 9-8" /></svg>;
+  if (name === 'users') return <svg {...common}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>;
+  if (name === 'bowl') return <svg {...common}><path d="M4 11h16a6 6 0 0 1-16 0z" /><path d="M12 5v3" /><path d="M8 17.5h8" /></svg>;
+  if (name === 'spark') return <svg {...common}><path d="M12 3l1.6 5.2L19 10l-5.4 1.8L12 17l-1.6-5.2L5 10l5.4-1.8z" /></svg>;
+  if (name === 'shield') return <svg {...common}><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" /></svg>;
+  if (name === 'child') return <svg {...common}><circle cx="12" cy="7" r="3" /><path d="M7 20v-2.5A4.5 4.5 0 0 1 11.5 13h1A4.5 4.5 0 0 1 17 17.5V20" /></svg>;
+  if (name === 'handheart') return <svg {...common}><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" /><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 15 6 6" /><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z" /></svg>;
+  if (name === 'woman') return <svg {...common}><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></svg>;
+  if (name === 'family') return <svg {...common}><circle cx="7" cy="7" r="2" /><circle cx="17" cy="7" r="2" /><circle cx="12" cy="10" r="2.2" /><path d="M3.5 19v-.8A2.7 2.7 0 0 1 6.2 15.5H8" /><path d="M20.5 19v-.8A2.7 2.7 0 0 0 17.8 15.5H16" /><path d="M8.2 20v-1.2A2.6 2.6 0 0 1 10.8 16.2h2.4A2.6 2.6 0 0 1 15.8 18.8V20" /></svg>;
+  if (name === 'check') return <svg {...common}><circle cx="12" cy="12" r="9" /><path d="M8 12.5l2.5 2.5L16 9.5" /></svg>;
+  if (name === 'tick') return <svg {...common} strokeWidth={2.4}><path d="M5 12.5l4.5 4.5L19 7" /></svg>;
+  if (name === 'pin') return <svg {...common}><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z" /><circle cx="12" cy="10" r="2.2" /></svg>;
+  if (name === 'phone') return <svg {...common}><path d="M7 3.5h3l1.2 3-2 1.2a12 12 0 0 0 5.1 5.1l1.2-2 3 1.2v3A2 2 0 0 1 16.5 17 14.5 14.5 0 0 1 5 5.5 2 2 0 0 1 7 3.5z" /></svg>;
+  if (name === 'mail') return <svg {...common}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M4 7l8 6 8-6" /></svg>;
+  if (name === 'user') return <svg {...common}><circle cx="12" cy="8" r="4" /><path d="M5 20a7 7 0 0 1 14 0" /></svg>;
+  if (name === 'message') return <svg {...common}><path d="M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" /></svg>;
+  if (name === 'play') return <svg viewBox="0 0 24 24" className={className} aria-hidden><path fill="currentColor" d="M9 7.5v9l8-4.5z" /></svg>;
+  if (name === 'facebook') return <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><path d="M14.5 8.5V6.8c0-.7.5-1 1.2-1H17V3h-2.2C12.2 3 11 4.4 11 6.6v1.9H9v2.8h2V21h3.1v-9.7h2.1l.4-2.8h-2.5z" /></svg>;
+  if (name === 'instagram') return <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><path fillRule="evenodd" d="M8 2.5h8A5.5 5.5 0 0 1 21.5 8v8A5.5 5.5 0 0 1 16 21.5H8A5.5 5.5 0 0 1 2.5 16V8A5.5 5.5 0 0 1 8 2.5zm4 5.2a4.3 4.3 0 1 0 0 8.6 4.3 4.3 0 0 0 0-8.6zM12 9.6a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8zM17.4 6.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" /></svg>;
+  if (name === 'youtube') return <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><path d="M23 12.2s0-3.3-.4-4.8a3 3 0 0 0-2.1-2.1C18.8 4.8 12 4.8 12 4.8s-6.8 0-8.5.5a3 3 0 0 0-2.1 2.1C1 8.9 1 12.2 1 12.2s0 3.3.4 4.8a3 3 0 0 0 2.1 2.1c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a3 3 0 0 0 2.1-2.1c.4-1.5.4-4.8.4-4.8zM9.8 15.6V8.8l6.2 3.4-6.2 3.4z" /></svg>;
+  if (name === 'linkedin') return <svg viewBox="0 0 24 24" className={className} aria-hidden fill="currentColor"><path d="M5.7 8.7H2.9V21h2.8V8.7zM4.3 3A1.8 1.8 0 1 0 4.3 6.6 1.8 1.8 0 0 0 4.3 3zM21 21h-2.8v-6.1c0-1.8-.6-3-2.2-3-1.2 0-1.9.8-2.2 1.6-.1.3-.1.7-.1 1.1V21H11V8.7h2.7v1.7c.5-.8 1.5-2 3.6-2 2.6 0 4.7 1.7 4.7 5.4V21z" /></svg>;
+  if (name === 'sprout') return <svg {...common}><path d="M7 20h10" /><path d="M10 20c5.5-2.5.8-6.4 3-10" /><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" /><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" /></svg>;
+  return null;
+}

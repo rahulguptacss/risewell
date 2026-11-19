@@ -1,0 +1,241 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.png",
+      "logo_mark": "RW",
+      "logo_text": "RISEWELL",
+      "logo_tagline": "A PEOPLE FOR A BETTER TOMORROW",
+      "logo_alt": "Risewell",
+      "links": [
+        { "name": "Home", "href": "#home" },
+        { "name": "About Us", "href": "#about" },
+        { "name": "Services", "href": "#services" },
+        { "name": "Why Us", "href": "#why" },
+        { "name": "Gallery", "href": "#moments" },
+        { "name": "Testimonials", "href": "#stories" }
+      ],
+      "button_text": "Donate Now",
+      "button_href": "#involve",
+      "button_icon": "heart",
+      "menu_label": "Open menu",
+      "close_label": "Close menu"
+    },
+    "Footer": {
+      "logo": "/logo/logo-w.png",
+      "logo_mark": "RW",
+      "logo_text": "RISEWELL",
+      "logo_alt": "Risewell",
+      "description": "Empowering communities through education, healthcare, and sustainable social initiatives.",
+      "links_title": "Quick Links",
+      "link_mark": ">",
+      "links": [
+        { "name": "Home", "href": "#home" },
+        { "name": "About Us", "href": "#about" },
+        { "name": "Services", "href": "#services" },
+        { "name": "Why Us", "href": "#why" }
+      ],
+      "explore_title": "Explore",
+      "explore": [
+        { "name": "Gallery", "href": "#moments" },
+        { "name": "Testimonials", "href": "#stories" },
+        { "name": "Contact Us", "href": "#involve" }
+      ],
+      "contact_title": "Get in Touch",
+      "address": "123 Education Lane, New York, NY 10001",
+      "phone": "+100000000000",
+      "phone_href": "tel:+100000000000",
+      "email": "info@xyz.com",
+      "email_href": "mailto:info@xyz.com",
+      "socials": [
+        { "name": "Facebook", "href": "https://facebook.com" },
+        { "name": "Instagram", "href": "https://instagram.com" },
+        { "name": "YouTube", "href": "https://youtube.com" },
+        { "name": "LinkedIn", "href": "https://linkedin.com" }
+      ],
+      "copyright": "© 2026 RISEWELL. All Rights Reserved."
+    },
+    "BackToTop": { "aria_label": "Back to top", "icon": "↑" }
+  },
+  "categories": {
+    "Charity": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "Risewell | Helping Each Other Make a Better Today",
+                "description": "Join Risewell to support education, healthcare, and community programs that give every child a fair chance."
+              },
+              "components": [
+                { "key": "HeroSection", "component": "Hero" },
+                { "key": "AboutSection", "component": "About" },
+                { "key": "ServicesSection", "component": "Services" },
+                { "key": "WhySection", "component": "Why" },
+                { "key": "MomentsSection", "component": "Moments" },
+                { "key": "StoriesSection", "component": "Testimonials" },
+                { "key": "InvolveSection", "component": "Involve" }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "id": "home",
+              "eyebrow": "Start Donating for a Better Tomorrow",
+              "eyebrow_icon": "sprout",
+              "title_line": "Helping Each Other",
+              "title_mid": "Make a",
+              "title_accent": "Better Today",
+              "lead": "Join our monthly giving program to provide consistent support to our initiatives. Regular contributions, no matter the size, help us plan and sustain long-term projects.",
+              "button_text": "Donate Now",
+              "button_href": "#involve",
+              "image": "/hero/girlnew.webp",
+              "image_alt": "Smiling girl looking upward"
+            },
+            "about": {
+              "id": "about",
+              "eyebrow": "About Us",
+              "title": "Do More Together Than You Can Alone.",
+              "title_accent": "Start Helping Now!",
+              "text": "We are a people-driven non-profit organization committed to creating meaningful change in underprivileged communities. Through collective support, we work to provide education, healthcare, and a better quality of life for those in need.",
+              "image": "/about/girl.webp",
+              "image_alt": "Girl washing her hands at a tap",
+              "image_front": "/about/boy.webp",
+              "image_front_alt": "Boy holding a save the planet sign",
+              "points": [
+                { "icon": "cap", "title": "Education for All" },
+                { "icon": "pulse", "title": "Better Healthcare" },
+                { "icon": "users", "title": "Stronger Communities" }
+              ]
+            },
+            "services": {
+              "id": "services",
+              "eyebrow": "Our Services",
+              "title": "Our Work for a",
+              "title_accent": "Better Tomorrow",
+              "lead": "We focus on key areas that create lasting, meaningful change in people's lives and help build stronger, healthier, and more inclusive communities.",
+              "items": [
+                { "icon": "cap", "title": "Education Support", "text": "Providing learning opportunities and resources for a brighter future." },
+                { "icon": "pulse", "title": "Healthcare Assistance", "text": "Improving access to basic healthcare and wellness services." },
+                { "icon": "users", "title": "Community Development", "text": "Empowering communities through sustainable and inclusive initiatives." },
+                { "icon": "sprout", "title": "Environmental Care", "text": "Promoting a cleaner, greener and healthier environment for all." },
+                { "icon": "handheart", "title": "Food & Basic Needs", "text": "Supporting underprivileged families with essential supplies and nutrition." },
+                { "icon": "woman", "title": "Women Empowerment", "text": "Creating opportunities for women through skills, support and self-reliance." },
+                { "icon": "handheart", "title": "Disaster Relief", "text": "Providing timely help and rehabilitation during emergencies." },
+                { "icon": "family", "title": "Child Welfare", "text": "Ensuring safety, care and better opportunities for every child." }
+              ]
+            },
+            "why": {
+              "id": "why",
+              "eyebrow": "Why Choose Us",
+              "title": "Give Every Child a Fair Chance in",
+              "title_accent": "Life",
+              "text": "We are committed to creating real and lasting change through transparency, community involvement, and a strong focus on people's well-being.",
+              "image": "/why/girl.webp",
+              "image_alt": "Smiling girl looking upward",
+              "points": [
+                { "icon": "tick", "title": "People-Centric Approach" },
+                { "icon": "tick", "title": "Transparency & Trust" },
+                { "icon": "tick", "title": "Sustainable Initiatives" }
+              ],
+              "stats": [
+                { "icon": "users", "value": "9+", "label": "Countries" },
+                { "icon": "handheart", "value": "47+", "label": "Projects" }
+              ],
+              "banner": "We Work Together",
+              "banner_mid": "and Never",
+              "banner_accent": "Give Up"
+            },
+            "moments": {
+              "id": "moments",
+              "eyebrow": "Our Gallery",
+              "title": "Moments from",
+              "title_accent": "Our Initiatives",
+              "lead": "A glimpse of our work, events, and community activities that create meaningful change in people's lives.",
+              "close_label": "Close image",
+              "close_icon": "×",
+              "images": [
+                { "src": "/hero/girlnew.webp", "alt": "Smiling girl looking upward" },
+                { "src": "/moments/2.webp", "alt": "Community gathering" },
+                { "src": "/moments/1.webp", "alt": "Children smiling together" },
+                { "src": "/moments/4.webp", "alt": "Volunteers with children" },
+                { "src": "/moments/3.webp", "alt": "Kids learning outdoors" },
+                { "src": "/moments/6.webp", "alt": "Volunteer helping an elder" },
+                { "src": "/moments/5.webp", "alt": "Group of happy children" }
+              ]
+            },
+            "involve": {
+              "id": "involve",
+              "eyebrow": "Contact Us",
+              "title": "Get in Touch &",
+              "title_accent": "Support Our Cause",
+              "lead": "Have a question, want to collaborate, or wish to support our work? We'd love to hear from you.",
+              "name_placeholder": "Your Name",
+              "email_placeholder": "Your Email",
+              "phone_placeholder": "Your Phone",
+              "message_placeholder": "Your Message",
+              "button_text": "Send Message",
+              "button_icon": "→",
+              "success_message": "Thank you. We will get back to you soon.",
+              "image": "/involve/community.webp",
+              "image_alt": "Volunteer with children outdoors",
+              "card_icon": "handheart",
+              "card_title": "Make a Difference Today",
+              "card_text": "Your contribution helps us provide education, healthcare, and a better future for those in need."
+            },
+            "testimonials": {
+              "id": "stories",
+              "eyebrow": "Testimonials",
+              "title": "Stories of Change",
+              "title_accent": "and Impact",
+              "lead": "Hear from the people and communities whose lives have been positively impacted through our initiatives.",
+              "quote_mark": "“",
+              "star": "★",
+              "prev_label": "Previous",
+              "next_label": "Next",
+              "prev_icon": "‹",
+              "next_icon": "›",
+              "close_label": "Close image",
+              "close_icon": "×",
+              "items": [
+                {
+                  "quote": "The education support from the organization has truly changed my child's future. We are grateful for their continuous care and efforts.",
+                  "name": "Anna Brooks",
+                  "role": "Beneficiary",
+                  "stars": 5,
+                  "image": "/stories/anita.webp",
+                  "image_alt": "Anna Brooks"
+                },
+                {
+                  "quote": "Their healthcare camp in our village was a great help. The team was supportive, kind, and genuinely cared for our well-being.",
+                  "name": "James Carter",
+                  "role": "Community Member",
+                  "stars": 5,
+                  "image": "/stories/rahul.webp",
+                  "image_alt": "James Carter"
+                },
+                {
+                  "quote": "It's inspiring to see how they work for children, families, and communities. Their dedication brings real and lasting change.",
+                  "name": "Emily Parker",
+                  "role": "Volunteer",
+                  "stars": 5,
+                  "image": "/stories/meera.webp",
+                  "image_alt": "Emily Parker"
+                },
+                {
+                  "quote": "Regular support helped our classroom stay open and gave the children books they could take home.",
+                  "name": "Michael Reed",
+                  "role": "Partner",
+                  "stars": 5,
+                  "image": "/stories/rahul.webp",
+                  "image_alt": "Michael Reed"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
