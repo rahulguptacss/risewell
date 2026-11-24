@@ -17,7 +17,7 @@ export default function BackToTop({ data }: { data: BackToTopData }) {
       type="button"
       aria-label={data.aria_label}
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-5 right-5 z-40 grid h-11 w-11 place-items-center rounded-full bg-[#f5a524] text-white shadow-lg"
+      className="fixed bottom-5 right-5 z-40 grid h-11 w-11 place-items-center rounded-full bg-[#ff8c42] text-white shadow-lg"
     >
       {data.icon}
     </button>

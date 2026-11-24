@@ -21,8 +21,8 @@ export default function Moments({ data }: { data: MomentsSectionData }) {
     <section id={data.id} className="bg-white pt-6 pb-6 sm:pt-8 sm:pb-8">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="rise flex items-center justify-center gap-3 text-sm font-semibold text-[#16325c]">
-            <span className="h-1 w-8 rounded-full bg-[#f5a524]" />
+          <p className="rise flex items-center justify-center gap-3 text-base font-semibold text-[#16325c]">
+            <span className="h-1 w-8 rounded-full bg-[#ff8c42]" />
             {data.eyebrow}
           </p>
           <h2 className="rise mt-4 text-3xl font-extrabold text-[#102a56] sm:text-4xl" style={{ animationDelay: '80ms' }}>
@@ -48,12 +48,28 @@ export default function Moments({ data }: { data: MomentsSectionData }) {
           ))}
         </div>
       </div>
-      {active && (
-        <div className="fixed inset-0 z-50 grid place-items-center bg-[#071a33]/80 p-4" onClick={() => setOpen(null)}>
-          <button type="button" aria-label={data.close_label} className="absolute right-5 top-5 text-3xl text-white" onClick={() => setOpen(null)}>
+      {active && open !== null && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#071a33]/80 px-14 py-16" onClick={() => setOpen(null)}>
+          <button type="button" aria-label={data.close_label} className="absolute right-4 top-4 text-3xl text-white" onClick={() => setOpen(null)}>
             {data.close_icon}
           </button>
-          <img src={active.src} alt={active.alt} className="max-h-[85vh] max-w-5xl rounded-2xl object-contain" onClick={(event) => event.stopPropagation()} />
+          <button
+            type="button"
+            aria-label="Previous image"
+            className="absolute left-3 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white text-[#1d4ed8]"
+            onClick={(event) => { event.stopPropagation(); setOpen((open - 1 + data.images.length) % data.images.length); }}
+          >
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M15 6l-6 6 6 6" /></svg>
+          </button>
+          <img src={active.src} alt={active.alt} className="max-h-[70vh] max-w-full rounded-2xl object-contain" onClick={(event) => event.stopPropagation()} />
+          <button
+            type="button"
+            aria-label="Next image"
+            className="absolute right-3 top-1/2 grid h-11 w-11 -translate-y-1/2 place-items-center rounded-full bg-white text-[#1d4ed8]"
+            onClick={(event) => { event.stopPropagation(); setOpen((open + 1) % data.images.length); }}
+          >
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="M9 6l6 6-6 6" /></svg>
+          </button>
         </div>
       )}
     </section>

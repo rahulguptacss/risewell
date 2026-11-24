@@ -52,7 +52,7 @@
         { "name": "YouTube", "href": "https://youtube.com" },
         { "name": "LinkedIn", "href": "https://linkedin.com" }
       ],
-      "copyright": "© 2026 RISEWELL. All Rights Reserved."
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow"
     },
     "BackToTop": { "aria_label": "Back to top", "icon": "↑" }
   },

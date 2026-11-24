@@ -49,13 +49,13 @@ export default function Why({ data }: { data: WhySectionData }) {
         <div className="rounded-[28px] bg-[#f4f7fb] p-4 sm:p-6">
           <div className="grid items-center gap-8 lg:grid-cols-[280px_1fr_240px]">
             <div className="rise relative mx-auto h-[280px] w-full max-w-sm lg:h-[300px]">
-              <span className="absolute -left-1 -top-1 z-10 h-8 w-8 border-l-4 border-t-4 border-[#f5a524]" />
-              <span className="absolute -bottom-1 -left-1 z-10 h-8 w-8 border-b-4 border-l-4 border-[#1d4ed8]" />
+              <span className="absolute -left-1 -top-1 z-10 h-10 w-10 rounded-tl-2xl border-l-[5px] border-t-[5px] border-[#ff8c42]" />
+              <span className="absolute -bottom-1 -right-1 z-10 h-10 w-10 rounded-br-2xl border-b-[5px] border-r-[5px] border-[#1d4ed8]" />
               <img src={data.image} alt={data.image_alt} className="h-full w-full rounded-2xl object-cover object-[center_20%]" />
             </div>
             <div className="rise" style={{ animationDelay: '100ms' }}>
-              <p className="flex items-center gap-3 text-sm font-semibold text-[#16325c]">
-                <span className="h-1 w-8 rounded-full bg-[#f5a524]" />
+              <p className="flex items-center gap-3 text-base font-semibold text-[#16325c]">
+                <span className="h-1 w-8 rounded-full bg-[#ff8c42]" />
                 {data.eyebrow}
               </p>
               <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#102a56] sm:text-4xl">
@@ -66,7 +66,7 @@ export default function Why({ data }: { data: WhySectionData }) {
             <ul className="rise space-y-4 border-[#e1e8f2] lg:border-l lg:pl-6" style={{ animationDelay: '180ms' }}>
               {data.points.map((point) => (
                 <li key={point.title} className="flex items-center gap-3 text-sm font-bold text-[#102a56]">
-                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[#f5a524] text-white">
+                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[#ff8c42] text-white">
                     <Icon name={point.icon} className="h-3.5 w-3.5" />
                   </span>
                   {point.title}
@@ -75,28 +75,30 @@ export default function Why({ data }: { data: WhySectionData }) {
             </ul>
           </div>
         </div>
-        <div className="mt-8 grid items-center gap-6 sm:grid-cols-[1.3fr_auto_1fr_auto_1fr]">
-          <p className="rise text-3xl font-extrabold leading-tight text-[#102a56] sm:text-[34px]">
+        <div className="mt-8 flex flex-col gap-6 sm:grid sm:grid-cols-[1.3fr_auto_1fr_auto_1fr] sm:items-center">
+          <p className="rise text-[26px] font-extrabold leading-tight text-[#102a56] sm:text-[34px]">
             {data.banner}
             <span className="mt-1 block">
               {data.banner_mid} <span className="text-[#1d4ed8]">{data.banner_accent}</span>
             </span>
-            <span className="mt-2 block h-1 w-14 rounded-full bg-[#f5a524]" />
+            <span className="mt-2 block h-1 w-14 rounded-full bg-[#ff8c42]" />
           </p>
-          {data.stats.map((stat) => (
-            <div key={stat.label} className="contents">
-              <span className="hidden h-12 w-px bg-[#e1e8f2] sm:block" />
-              <div className="rise flex items-center gap-3">
-                <span className="grid h-12 w-12 place-items-center rounded-2xl border border-[#e7edf5] text-[#f5a524]">
-                  <Icon name={stat.icon} />
-                </span>
-                <div>
-                  <p className="text-4xl font-extrabold text-[#102a56] sm:text-5xl"><Counter value={stat.value} /></p>
-                  <p className="text-base text-[#6b7c93]">{stat.label}</p>
+          <div className="grid grid-cols-2 gap-4 sm:contents">
+            {data.stats.map((stat) => (
+              <div key={stat.label} className="contents">
+                <span className="hidden h-12 w-px bg-[#e1e8f2] sm:block" />
+                <div className="rise flex items-center gap-3">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl border border-[#e7edf5] text-[#ff8c42] sm:h-12 sm:w-12">
+                    <Icon name={stat.icon} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-3xl font-extrabold text-[#102a56] sm:text-5xl"><Counter value={stat.value} /></p>
+                    <p className="text-sm text-[#6b7c93] sm:text-base">{stat.label}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

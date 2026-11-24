@@ -18,8 +18,8 @@ export default function Involve({ data }: { data: InvolveSectionData }) {
             setSent(true);
           }}
         >
-          <p className="flex items-center gap-3 text-sm font-semibold text-[#16325c]">
-            <span className="h-1 w-8 rounded-full bg-[#f5a524]" />
+          <p className="flex items-center gap-3 text-base font-semibold text-[#16325c]">
+            <span className="h-1 w-8 rounded-full bg-[#ff8c42]" />
             {data.eyebrow}
           </p>
           <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#102a56] sm:text-[40px]">
@@ -56,11 +56,11 @@ export default function Involve({ data }: { data: InvolveSectionData }) {
           <img src={data.image} alt={data.image_alt} className="absolute inset-0 h-full w-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#071a33]/70 via-[#071a33]/10 to-transparent" />
           <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-[#0d2f73]/95 p-6 text-white shadow-xl backdrop-blur-sm sm:inset-x-6 sm:bottom-6 sm:p-7">
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-[#f5a524]">
+            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-[#ff8c42]">
               <Icon name={data.card_icon} className="h-7 w-7" />
             </span>
             <h3 className="mt-4 text-2xl font-extrabold leading-tight">{data.card_title}</h3>
-            <span className="mt-3 block h-1 w-12 rounded-full bg-[#f5a524]" />
+            <span className="mt-3 block h-1 w-12 rounded-full bg-[#ff8c42]" />
             <p className="mt-3 max-w-sm text-sm leading-7 text-white/80">{data.card_text}</p>
           </div>
         </div>
