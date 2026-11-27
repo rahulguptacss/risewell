@@ -29,7 +29,6 @@ export default function About({ data }: { data: AboutSectionData }) {
         <div className="relative mx-auto h-[520px] w-full max-w-lg sm:h-[600px]">
           <div className="absolute right-0 top-4 h-[90%] w-[72%]">
             <span className="pointer-events-none absolute -right-1 -top-1 z-10 h-14 w-14 rounded-tr-[22px] border-r-[5px] border-t-[5px] border-[#1d4ed8]" />
-            <span className="pointer-events-none absolute -bottom-1 -left-1 z-10 h-14 w-14 rounded-bl-[22px] border-b-[5px] border-l-[5px] border-[#1d4ed8]" />
             <img src={data.image} alt={data.image_alt} className="rise h-full w-full rounded-[22px] object-cover shadow-md" style={{ animationDelay: '120ms' }} />
           </div>
           <div className="absolute bottom-4 left-0 h-[64%] w-[48%]">
